@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header, main {
+            margin-left: 10px;
+        }
+
+        pre {
+            background-color: lightgray;
+            max-width: 350px;
+            border-radius: 5px;
+            color: lightcoral;
+        }
+
+        footer {
+            padding: 10px;
+            background-color: black;
+            color: white;
+            margin: auto;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        main div {
+            margin: auto;
+            text-align: center;
+            padding-bottom: 10px;
+            margin-bottom: 5px;
+        }
+
+        main div a {
+            background-color: lightcoral;
+            padding: 6px 12px;
+            text-decoration: none;
+            color: white;
+            border-radius: 3px;
+        }
+
+        main div a:active {
+            padding: 12px 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML</h1>
+        <hr>
+
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#historia-dos-computadores">História dos computadores</a></li>
+            <li><a href="#clients">O que são <em>Clients</em>?</a></li>
+            <li><a href="#servers">O que são <em>Servers</em>?</a></li>
+            <li><a href="#estrutura-html">Como é uma estrutura básica de um HTML?</a></li>
+            <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+            <li><a href="#referencias">Links de referências</a></li>
+        </ul>
+    </header>
+    <main>
+        <!--
+            TAG <u></u> sublinhado não semântica 
+            TAG <ins></ins> sublinhado semântica 
+            -----------------------------------
+            TAG <i></i> italico não semântica
+            TAG <em></em> italico semântica
+
+            Fiz a troca das tags porque eu acho que é o ideal é usar as tags semânticas.
+        -->
+
+        <h2 id="historia-dos-computadores">História dos computadores</h2>
+
+        <p>A evolução dos computadores reflete uma jornada incrível que moldou a forma como interagimos com a
+            tecnologia.</p>
+        <p>
+            O computador, tal qual conhecemos hoje, passou por diversas transformações e foi se
+            aperfeiçoando ao longo do tempo, acompanhando o avanço das áreas da matemática, engenharia,
+            eletrônica. É por isso que não existe somente um inventor.
+        </p>
+        <p>
+            De acordo com os sistemas e ferramentas utilizados, a história da computação
+            está dividida em quatro períodos.
+        </p>
+
+        <h3>Primeira Geração (1951-1959)</h3>
+
+        <p>
+            Os computadores de primeira geração funcionavam por meio de circuitos e
+            válvulas eletrônicas. Possuíam o uso restrito, além de serem imensos e
+            consumirem muita energia.
+        </p>
+        <p>
+            Um exemplo é o ENIAC <em>(Eletronic Numerical Integrator and Computer)</em> que consumia
+            cerca de 200 quilowatts e possuía 19.000 válvulas.
+        </p>
+
+        <h3>Segunda Geração (1959-1965)</h3>
+
+        <p>
+            Ainda com dimensões muito grandes, os computadores da segunda geração funcionavam por
+            meio de transistores, os quais substituíram as válvulas que eram maiores e mais lentas.
+            Nesse período já começam a se espalhar o uso comercial.
+        </p>
+
+        <h3>Terceira Geração (1965-1975)</h3>
+
+        <p>
+            Os computadores da terceira geração funcionavam por circuitos integrados.
+            Esses substituíram os transistores e já apresentavam uma dimensão menor e
+            maior capacidade de processamento.
+        </p>
+        <P>
+            Foi nesse período que os chips foram criados e a
+            utilização de computadores pessoais começou.
+        </P>
+
+        <h3>Quarta Geração (1975-até os dias atuais)</h3>
+
+        <p>
+            Com o desenvolvimento da tecnologia da informação, os computadores diminuem de tamanho,
+            aumentam a velocidade e capacidade de processamento de dados.
+            São incluídos os microprocessadores com gasto cada vez menor de energia.
+        </p>
+        <p>
+            Nesse período, mais precisamente a partir da década de 90, há uma grande expansão dos computadores pessoais.
+        </p>
+        <p>
+            Além disso, surgem os softwares integrados e a partir da virada do milênio, começam a
+            surgir os computadores de mão. Ou seja, os smartphones, iPod, iPad e tablets, que
+            incluem conexão móvel com navegação na web.
+        </p>
+
+        <h2 id="clients">O que são <em>Clients</em>?</h2>
+
+        <p>
+            Na computação e em redes, o termo "cliente" refere-se a um dispositivo
+            <strong><em>como um computador, smartphone ou tablet</em></strong> que solicita serviços ou recursos de um
+            servidor.
+            Por exemplo, em uma arquitetura cliente-servidor, o cliente faz conexões ao servidor,
+            que fornece os recursos necessários.
+        </p>
+
+        <h2 id="servers">O que são <em>Servers</em>?</h2>
+
+        <p>
+            <ins>Servidores</ins> referem-se a sistemas de computadores ou programas de software projetados para
+            fornecer
+            serviços, recursos ou funcionalidades a outros dispositivos ou programas, conhecidos como
+            "clientes". Existem vários tipos de servidores, cada um dedicado a fornecer serviços específicos.<br>
+            <strong>Exemplos:</strong><br>
+
+        <h3>Servidores Web</h3>
+
+        <p>São responsáveis ​​por armazenar e entregar páginas web para os navegadores dos usuários.
+            Eles processam <ins>HTTP</ins> e entregam os recursos associados, como <ins>HTML</ins>, imagens,
+            folhas de estilo e scripts.
+        </p>
+
+        <h3>Servidores de Email</h3>
+
+        <p>
+            Gerenciamos o envio, coleta e armazenamento de emails. Eles utilizam protocolos como
+            <ins>SMTP</ins> (Simple Mail Transfer Protocol) e <ins>IMAP</ins> (Internet Message Access Protocol) para
+            esse propósito.
+        </p>
+        </p>
+
+        <h2 id="estrutura-html">Como é uma estrutura básica de um HTML?</h2>
+
+        <p>Abaixo vemos uma simples estrutura html!</p>
+        <pre>
+            <code>
+                &lt;html&gt;
+
+                &lt;head&gt;
+                    &lt;title&gt;Document&lt;/title&gt;
+                &lt;/head&gt;
+
+                &lt;body&gt;
+                    &lt;p&gt;Hello, World!&lt;/p&gt;
+                &lt;/body&gt;
+
+                &lt;/html&gt;
+            </code>
+        </pre>
+
+        <h2 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+
+        <p>Está e uma lista ordenada!</p>
+        <ol>
+            <li>Tobey Maguire</li>
+            <li>Andrew Garfield</li>
+            <li>Tom Holland</li> <!--Horrível-->
+        </ol>
+        <p>Este e um exemplo de uma lista não ordenada!</p>
+        <ul>
+            <li>Luffy</li>
+            <li>Zoro</li>
+            <li>Sanji</li>
+        </ul>
+        <p>
+            A diferença entra elas é simples! A lista ordenada utiliza numerais, a não ordenada
+            utliza marcadores.
+        </p>
+
+        <h2 id="referencias">Links de referências</h2>
+
+        <ul>
+            <li><a target="_blank" rel="external"href="http://dio.me">http://dio.me</a></li>
+            <li>
+                <a 
+                    target="_blank" 
+                    rel="external" 
+                    href="https://www.todamateria.com.br/historia-e-evolucao-dos-computadores/"
+                >
+                    https://www.todamateria.com.br/historia-e-evolucao-dos-computadores/
+                </a>
+            </li>
+        </ul>
+
+        <div>
+            <a href="#inicio">Início</a>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Pagina criada por 
+            <a target="_blank" rel="external" href="https://github.com/josehenriques10">
+                <strong>José Henrique</strong>
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>
